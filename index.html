@@ -287,7 +287,7 @@
         </div>
       </div>
     </section>
-    <!-- Contact Section -->
+<!-- Contact Section -->
     <section id="contact" class="section bg-dark">
       <div class="container">
         <div class="row gy-5">
@@ -295,37 +295,37 @@
             <div class="contact-form">
               <h2 class="text-dark">Get in touch</h2>
               <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum et consequatur tempora, vero doloribus nemo iure quam nostrum quaerat debitis, quidem asperiores fugit labore, necessitatibus nulla illo. Quia, hic excepturi!</p>
-              <form action="#">
+              <form action="assets/backend/send_email.php" method="post" onsubmit="return validateForm()">
                 <div class="row gy-4 gx-3">
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label class="form-label">Name</label>
-                      <input type="text" class="form-control" name="name">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" name="name" required>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label class="form-label">Email</label>
-                      <input type="email" class="form-control" name="email">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" name="email" required>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label class="form-label">Subject</label>
-                      <input type="text" class="form-control" name="subject">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-control" name="subject" required>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-group">
-                      <label class="form-label">Message</label>
-                      <textarea name="message" rows="3" class="form-control"></textarea>
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label class="form-label">Message</label>
+                            <textarea name="message" rows="3" class="form-control" required></textarea>
+                        </div>
                     </div>
-                  </div>
-                  <div class="col-12">
-                    <button class="colored-btn" type="submit">Send Message</button>
-                  </div>
+                    <div class="col-12">
+                        <button class="colored-btn" type="submit">Send Message</button>
+                    </div>
                 </div>
-              </form>
+            </form>
             </div>
           </div>
           <div class="col-lg-5 ms-auto col-xl-4">
