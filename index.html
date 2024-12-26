@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="theme-color" content="#006edf">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
   <title>Personal Portfolio</title>
 </head>
 <body>
@@ -17,32 +19,30 @@
         <a href="#" class="navbar-brand">
           <h4 class="mb-0">Gilmar <span class="text-primary">Shuenck</span></h4>
         </a>
-
         <!-- Menu -->
         <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse-toggle">
           <ul class="navbar-nav mx-auto">
             <li>
-              <a href="#home" class="nav-link">Home</a>
+              <a href="#home" class="nav-link" data-scroll-nav="0">Home</a>
             </li>
             <li>
-              <a href="#about" class="nav-link">About</a>
+              <a href="#about" class="nav-link" data-scroll-nav="1">About</a>
             </li>
             <li>
-              <a href="#services" class="nav-link">Services</a>
+              <a href="#services" class="nav-link" data-scroll-nav="2">Services</a>
             </li>
             <li>
-              <a href="#skill" class="nav-link">Skills</a>
+              <a href="#skill" class="nav-link" data-scroll-nav="3">Skills</a>
             </li>
             <li>
-              <a href="#portfolio" class="nav-link">Portfolio</a>
+              <a href="#portfolio" class="nav-link" data-scroll-nav="4">Portfolio</a>
             </li>
           </ul>
         </div>
-
         <div class="ms-auto d-none d-lg-block">
           <a class="colored-btn" href="#contact">Contact Now</a>
         </div>
-
+        <!-- Mobile Menu Toggle -->
         <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle">
           <span></span>
           <span></span>
@@ -51,9 +51,10 @@
       </div>
     </nav>
   </header>
-
+  <!-- Main -->
   <main>
-    <section id="home" class="home-section bg-gray">
+    <!-- Home Section -->
+    <section id="home" class="home-section bg-gray" data-scroll-index="0">
       <div class="container">
         <div class="anim-elements">
           <div class="anim-element"><i class="bx bxl-html5"></i></div>
@@ -62,16 +63,13 @@
           <div class="anim-element"><i class="bx bxl-react"></i></div>
           <div class="anim-element"><i class="bx bxl-android"></i></div>
         </div>
-
         <div class="row gy-5 align-items-center">
           <div class="col-lg-6">
             <div class="home-intro text-center text-lg-start">
               <h6>Hi, My name is Gilmar.</h6>
               <h1>I'm a <span id="type-it">Web Developer</span></h1>
               <p>Curitiba, Brazil.</p>
-              <a href="#about" class="colored-btn mt-1">
-                About Me
-              </a>
+              <a href="#about" class="colored-btn mt-1">About Me</a>
             </div>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
@@ -82,9 +80,8 @@
         </div>
       </div>
     </section>
-
     <!-- About Section -->
-     <section id="about" class="section">
+    <section id="about" class="section" data-scroll-index="1">
       <div class="container">
         <div class="row gy-5 align-items-center">
           <div class="col-lg-6 text-center">
@@ -92,9 +89,7 @@
           </div>
           <div class="col-lg-6 ps-lg-5">
             <div class="about-text">
-              <h3 class="h1 mb-3 text-dark fw-semibold">
-                I'm a Freelancer with months of experience.
-              </h3>
+              <h3 class="h1 mb-3 text-dark fw-semibold">I'm a Freelancer with months of experience.</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut reiciendis sed temporibus praesentium odio numquam labore hic eius velit suscipit, illum nihil porro, quaerat cupiditate fugit. Molestiae placeat natus non!</p>
               <div class="row pt-2">
                 <div class="col-6 col-md-4">
@@ -110,53 +105,282 @@
           </div>
         </div>
       </div>
-     </section>
-
-     <!-- Sevices Section -->
-      <section id="services" class="section bg-gray" style="background-image: url(assets/img/bg-effect-1.png); background-repeat: no-repeat; background-size: cover;">
-        <div class="container">
-          <div class="section-heading">
-            <h3>My Services</h3>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="section bg-gray" style="background-image: url(assets/img/bg-effect-1.png); background-repeat: no-repeat; background-size: cover;" data-scroll-index="2">
+      <div class="container">
+        <div class="section-heading">
+          <h3>My Services</h3>
+        </div>
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <div class="feature-box bg-1">
+              <div class="icon"><i class="bx bx-brush"></i></div>
+              <div class="content">
+                <h5>Web Developer</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus nemo pariatur, labore ea quisquam aperiam id. Dolore iste nisi consectetur ipsam, quae illo quam explicabo earum et modi dignissimos?</p>
+              </div>
+            </div>
           </div>
-          <div class="row gy-4">
-            <div class="col-md-6">
-              <div class="feature-box">
-                <div class="icon"><i class="bx bx-brush"></i></div>
-                <div class="content">
-                  <h5>Web Developer</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus nemo pariatur, labore ea quisquam aperiam id. Dolore iste nisi consectetur ipsam, quae illo quam explicabo earum et modi dignissimos?</p>
-                </div>
+          <div class="col-md-6">
+            <div class="feature-box bg-2">
+              <div class="icon"><i class="bx bx-brush"></i></div>
+              <div class="content">
+                <h5>Web Developer</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus nemo pariatur, labore ea quisquam aperiam id. Dolore iste nisi consectetur ipsam, quae illo quam explicabo earum et modi dignissimos?</p>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="feature-box">
-                <div class="icon"><i class="bx bx-brush"></i></div>
-                <div class="content">
-                  <h5>Web Developer</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus nemo pariatur, labore ea quisquam aperiam id. Dolore iste nisi consectetur ipsam, quae illo quam explicabo earum et modi dignissimos?</p>
-                </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-box bg-3">
+              <div class="icon"><i class="bx bx-brush"></i></div>
+              <div class="content">
+                <h5>Web Developer</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus nemo pariatur, labore ea quisquam aperiam id. Dolore iste nisi consectetur ipsam, quae illo quam explicabo earum et modi dignissimos?</p>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="feature-box">
-                <div class="icon"><i class="bx bx-brush"></i></div>
-                <div class="content">
-                  <h5>Web Developer</h5>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus nemo pariatur, labore ea quisquam aperiam id. Dolore iste nisi consectetur ipsam, quae illo quam explicabo earum et modi dignissimos?</p>
-                </div>
+          </div>
+          <div class="col-md-6">
+            <div class="feature-box bg-4">
+              <div class="icon"><i class="bx bx-brush"></i></div>
+              <div class="content">
+                <h5>Web Developer</h5>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus ducimus nemo pariatur, labore ea quisquam aperiam id. Dolore iste nisi consectetur ipsam, quae illo quam explicabo earum et modi dignissimos?</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+    <!-- Skill Section -->
+    <section id="skill" class="section" data-scroll-index="3">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-6">
+            <div class="section-heading text-start">
+              <h3>My Skills</h3>
+            </div>
+            <div class="skill-box">
+              <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-6">
+                  <div class="feature-box feature-box-small bg-1">
+                    <div class="icon"><i class="bx bxl-html5"></i></div>
+                    <h6>HTML</h6>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-6">
+                  <div class="feature-box feature-box-small bg-2">
+                    <div class="icon"><i class="bx bxl-css3"></i></div>
+                    <h6>CSS</h6>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-6">
+                  <div class="feature-box feature-box-small bg-3">
+                    <div class="icon"><i class="bx bxl-html5"></i></div>
+                    <h6>HTML</h6>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-6">
+                  <div class="feature-box feature-box-small bg-4">
+                    <div class="icon"><i class="bx bxl-html5"></i></div>
+                    <h6>HTML</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img src="assets/img/skills.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Work Section -->
+    <section id="portfolio" class="section bg-gray" data-scroll-index="4">
+      <div class="container">
+        <div class="section-heading">
+          <h3>Latest Projects</h3>
+        </div>
+        <div class="portfolio-box">
+          <div class="row gx-3 gy-4 pb-3 mb-5 pb-lg-3 mb-lg-3 justify-content-around align-items-center">
+            <div class="col-md-6 col-lg-5">
+              <div class="portfolio-img">
+                <img src="assets/img/gym-movement.jpeg" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <div class="portfolio-text">
+                <span>Web Developer</span>
+                <h4>Website Design and Development for Starttup</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste illum, soluta ab quos architecto consectetur sit commodi provident voluptas consequatur delectus mollitia, fugiat sed ipsa? Placeat officiis blanditiis dolores? <a href="https://gym-moviment-ea7f109defa9.herokuapp.com/" target="_blank" rel="gym-movement" class="colored-btn mt-1"> Gym Movement</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="row gx-3 gy-4 pb-3 mb-5 pb-lg-3 mb-lg-3 justify-content-around align-items-center flex-row-reverse">
+            <div class="col-md-6 col-lg-5">
+              <div class="portfolio-img">
+                <img src="assets/img/gym-suplement.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <div class="portfolio-text">
+                <span>Web Developer</span>
+                <h4>Website Design and Development for Starttup</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste illum, soluta ab quos architecto consectetur sit commodi provident voluptas consequatur delectus mollitia, fugiat sed ipsa? Placeat officiis blanditiis dolores? <a href="https://gym-suplement-909fe7f2432b.herokuapp.com/" target="_blank" rel="gym-suplement" class="colored-btn mt-1"> Gym Suplemnt</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="row gx-3 gy-4 pb-3 mb-5 pb-lg-3 mb-lg-3 justify-content-around align-items-center">
+            <div class="col-md-6 col-lg-5">
+              <div class="portfolio-img">
+                <img src="assets/img/gym-movement.jpeg" alt="">
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <div class="portfolio-text">
+                <span>Web Developer</span>
+                <h4>Website Design and Development for Starttup</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste illum, soluta ab quos architecto consectetur sit commodi provident voluptas consequatur delectus mollitia, fugiat sed ipsa? Placeat officiis blanditiis dolores? <a href="https://gym-moviment-ea7f109defa9.herokuapp.com/" target="_blank" rel="gym-movement" class="colored-btn mt-1"> Gym Movement</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <h3>Testimonials</h3>
+        </div>
+        <div class="owl-carousel">
+          <div class="feature-box mb-4">
+            <div class="img rounded-circle">
+              <img src="assets/img/avatar.png" alt="">
+            </div>
+            <div class="content">
+              <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae perferendis debitis nostrum. Nam ratione omnis corporis veniam vitae velit saepe quisquam tempora, architecto dolor expedita, officiis autem, perferendis nemo delectus.</p>
+              <h6 class="mb-0 text-dark fw-semibold">Ayrton Senna</h6>
+              <small>Racing driver F1</small>
+            </div>
+          </div>
+          <div class="feature-box mb-4">
+            <div class="img rounded-circle">
+              <img src="assets/img/avatar.png" alt="">
+            </div>
+            <div class="content">
+              <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae perferendis debitis nostrum. Nam ratione omnis corporis veniam vitae velit saepe quisquam tempora, architecto dolor expedita, officiis autem, perferendis nemo delectus.</p>
+              <h6 class="mb-0 text-dark fw-semibold">Ayrton Senna</h6>
+              <small>Racing driver F1</small>
+            </div>
+          </div>
+          <div class="feature-box mb-4">
+            <div class="img rounded-circle">
+              <img src="assets/img/avatar.png" alt="">
+            </div>
+            <div class="content">
+              <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae perferendis debitis nostrum. Nam ratione omnis corporis veniam vitae velit saepe quisquam tempora, architecto dolor expedita, officiis autem, perferendis nemo delectus.</p>
+              <h6 class="mb-0 text-dark fw-semibold">Ayrton Senna</h6>
+              <small>Racing driver F1</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-dark">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-6">
+            <div class="contact-form">
+              <h2 class="text-dark">Get in touch</h2>
+              <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum et consequatur tempora, vero doloribus nemo iure quam nostrum quaerat debitis, quidem asperiores fugit labore, necessitatibus nulla illo. Quia, hic excepturi!</p>
+              <form action="#">
+                <div class="row gy-4 gx-3">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label class="form-label">Name</label>
+                      <input type="text" class="form-control" name="name">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label class="form-label">Email</label>
+                      <input type="email" class="form-control" name="email">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label class="form-label">Subject</label>
+                      <input type="text" class="form-control" name="subject">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label class="form-label">Message</label>
+                      <textarea name="message" rows="3" class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="colored-btn" type="submit">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-5 ms-auto col-xl-4">
+            <div class="pb-5 d-none d-md-block">
+              <img src="assets/img/contact.png" alt="contact" class="w-100">
+            </div>
+            <ul class="contact-infos">
+              <li>
+                <div class="icon bg-1">
+                  <i class="bx bx-phone"></i>
+                </div>
+                <div class="col ps-3">
+                  <h5>Phone</h5>
+                  <p>+353 83 209 2933</p>
+                </div>
+              </li>
+              <li>
+                <div class="icon bg-1">
+                  <i class="bx bx-phone"></i>
+                </div>
+                <div class="col ps-3">
+                  <h5>Email</h5>
+                  <p>gilshuenck@gmail.com</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 py-2">
+          <div class="nav justify-content-center justify-content-md-start social-icon">
+            <a href="https://www.linkedin.com/in/gshuenck/" target="_blank"><i class="bx bxl-linkedin-square"></i></a>
+            <a href="https://github.com/gshuenck" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/gshuenck/" target="_blank"><i class='bx bxl-instagram'></i></a>
+          </div>
+        </div>
+        <div class="col-md-6 py-2 text-center text-md-end">
+          <p class="m-0">© <span id="year"></span> Copyright all right reserved | Developed By <a href="#">Gilmar Shuenck and Code Jungles</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
   <script src="assets/js/scripts.js"></script>
 </body>
 </html>
