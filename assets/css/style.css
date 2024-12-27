@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --primary-color: #ff651C;
+  --primary-color: #089e03;
   --dark-color: #373737;
 }
 
@@ -151,6 +151,7 @@ a:hover {
   background: var(--primary-color);
   color: #fff;
   box-shadow: 6px 6px 0 -1px var(--dark-color);
+  border-radius: 5px;
 }
 
 .colored-btn:hover {

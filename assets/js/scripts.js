@@ -46,3 +46,42 @@ document.addEventListener("DOMContentLoaded", function() {
   var year = new Date().getFullYear();
   document.getElementById("year").textContent = year;
 });
+
+// Manipular o Envio menssagem e o Pop-up
+document.getElementById("contactForm").addEventListener("submit", async function (event) {
+  event.preventDefault(); // Previne o comportamento padrão do formulário
+
+  const form = event.target;
+  const formData = new FormData(form);
+  const responseElement = document.getElementById("formResponse");
+
+  try {
+    const response = await fetch("https://formspree.io/f/myzzezak", {
+      method: "POST",
+      body: formData,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      // Mensagem de sucesso
+      responseElement.style.display = "block";
+      responseElement.className = "alert alert-success";
+      responseElement.textContent = "Mensagem enviada com sucesso!";
+      form.reset(); // Limpa o formulário após o envio
+    } else {
+      throw new Error("Erro ao enviar o formulário.");
+    }
+  } catch (error) {
+    // Mensagem de erro
+    responseElement.style.display = "block";
+    responseElement.className = "alert alert-danger";
+    responseElement.textContent = "Erro ao enviar a mensagem. Tente novamente.";
+  }
+
+  // Esconde a mensagem após 5 segundos
+  setTimeout(() => {
+    responseElement.style.display = "none";
+  }, 5000);
+});
