@@ -6,12 +6,12 @@
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="Content-Security-Policy" content="
-      default-src 'self';
-      script-src 'self' 'unsafe-inline' https://ajax.googleapis.com https://cdn.jsdelivr.net https://unpkg.com https://cdnjs.cloudflare.com;
-      object-src 'none';
-      style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://fonts.googleapis.com;
-      font-src 'self' https://fonts.gstatic.com https://unpkg.com;
-    ">
+    default-src 'self';
+    script-src 'self' 'unsafe-inline' https://ajax.googleapis.com https://cdn.jsdelivr.net https://unpkg.com https://cdnjs.cloudflare.com;
+    object-src 'none';
+    style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://fonts.googleapis.com https://cdnjs.cloudflare.com;
+    font-src 'self' https://fonts.gstatic.com https://unpkg.com https://cdnjs.cloudflare.com;
+  ">
     <meta name="theme-color" content="#22651f">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <meta name="google-site-verification" content="bz0cm8su9CCza36wZMA0hMjc8ty1b5RcyLuccc-FIsg" />
     <title>Personal Portfolio</title>
 </head>
@@ -102,16 +102,20 @@
           </div>
           <div class="col-lg-6 ps-lg-5">
             <div class="about-text">
-              <h3 class="h1 mb-3 text-dark fw-semibold">Technical professional with experience in implementing and maintaining technology, automation, and manufacturing equipment.</h3>
-              <p>With a background in Mechatronics and courses in Artificial Intelligence, Computer Science, and Web Development, I have developed skills in project coordination, quality, and operational safety. My exchange in Ireland expanded my ability to adapt and communicate in global environments. I am seeking an opportunity to apply my technical knowledge and contribute to the success of projects in an innovative company.</p>
+              <h3 class="h1 mb-3 text-dark fw-semibold">I am passionate about technology and innovation, seeking to create impactful solutions in the field of automation and web development.</h3>
+              <p>With a solid foundation in Mechatronics and continuous learning in AI, Web Development and Computer Science, I have excelled in project coordination and operational safety. My international exchange experience has improved my adaptability and communication skills.</p>
               <div class="row pt-2">
                 <div class="col-6 col-md-4">
-                  <h5 class="text-primary fw-semibold fs-4 mb-0">Single</h5>
-                  <span class="text-dark">Marital Status</span>
+                  <h5 class="text-primary fw-semibold fs-4 mb-0"><i class='bx bx-football'></i> Football</h5>
+                  <span class="text-dark">Hobby</span>
                 </div>
                 <div class="col-6 col-md-4">
-                  <h5 class="text-primary fw-semibold fs-4 mb-0">Curitiba, Brazil</h5>
-                  <span class="text-dark">Location</span>
+                  <h5 class="text-primary fw-semibold fs-4 mb-0"> <i class="fa-solid fa-gamepad"></i> Play Games</h5>
+                  <span class="text-dark">Hobby</span>
+                </div>
+                <div class="col-6 col-md-4">
+                  <h5 class="text-primary fw-semibold fs-4 mb-0"><i class="fa-solid fa-person-hiking"></i> Hiking</h5>
+                  <span class="text-dark">Hobby</span>
                 </div>
               </div>
             </div>
@@ -266,14 +270,14 @@
           <div class="row gx-3 gy-4 pb-3 mb-5 pb-lg-3 mb-lg-3 justify-content-around align-items-center">
             <div class="col-md-6 col-lg-5">
               <div class="portfolio-img">
-                <img src="assets/img/gym-movement.jpeg" alt="Gym Movement">
+                <img src="assets/img/gym-movement.png" alt="Gym Movement">
               </div>
             </div>
             <div class="col-md-6 col-lg-5">
               <div class="portfolio-text">
                 <span>Web Developer</span>
                 <h4>Gym Movement</h4>
-                <p>Developed a responsive web application for tracking gym activities, enabling users to log workouts, set goals, and monitor progress. Utilized modern front-end technologies like React.js and integrated a Node.js backend with a MongoDB database. <a href="https://gym-moviment-ea7f109defa9.herokuapp.com/" target="_blank" rel="gym-movement" class="colored-btn mt-1">Visit Gym Movement</a></p>
+                <p>Developed an innovative web application that helps gym-goers optimize their workout experience. Key features include location-based gym search, filtering by crowd levels, gender ratio, or age demographics, and scheduling notifications for selected time slots. Users can also check-in at the gym, track attendance history, and receive reminders to stay consistent. Built using Ruby, HTML, SCSS, JavaScript, Dockerfile, and Shell. <a href="https://gym-moviment-ea7f109defa9.herokuapp.com/" target="_blank" rel="gym-movement" class="colored-btn mt-1">Visit Gym Movement</a></p>
               </div>
             </div>
           </div>
@@ -286,12 +290,12 @@
             <div class="col-md-6 col-lg-5">
               <div class="portfolio-text">
                 <span>Web Developer</span>
-                <h4>Website Design and Development for Startup</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste illum, soluta ab quos architecto consectetur sit commodi provident voluptas consequatur delectus mollitia, fugiat sed ipsa? Placeat officiis blanditiis dolores? <a href="https://gym-suplement-909fe7f2432b.herokuapp.com/" target="_blank" rel="gym-suplement" class="colored-btn mt-1">Gym Supplement</a></p>
+                <h4>Gym Suplment</h4>
+                <p>Designed and implemented an e-commerce platform for gym supplements, featuring product listings, a shopping cart, and secure payment integration. The platform was developed using Ruby, HTML, SCSS, and Dockerfile. <a href="https://gym-suplement-909fe7f2432b.herokuapp.com/" target="_blank" rel="gym-suplement" class="colored-btn mt-1">Visit Gym Supplement</a></p>
               </div>
             </div>
           </div>
-          <div class="row gx-3 gy-4 pb-3 mb-5 pb-lg-3 mb-lg-3 justify-content-around align-items-center">
+          <!-- <div class="row gx-3 gy-4 pb-3 mb-5 pb-lg-3 mb-lg-3 justify-content-around align-items-center">
             <div class="col-md-6 col-lg-5">
               <div class="portfolio-img">
                 <img src="assets/img/gym-movement.jpeg" alt="">
@@ -304,12 +308,12 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste illum, soluta ab quos architecto consectetur sit commodi provident voluptas consequatur delectus mollitia, fugiat sed ipsa? Placeat officiis blanditiis dolores? <a href="https://gym-moviment-ea7f109defa9.herokuapp.com/" target="_blank" rel="gym-movement" class="colored-btn mt-1">Gym Movement</a></p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
     <!-- Testimonial Section -->
-    <section class="section">
+    <!-- <section class="section">
       <div class="container">
         <div class="section-heading">
           <h3>Testimonials</h3>
@@ -347,7 +351,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Contact Section -->
     <section id="contact" class="section bg-dark">
       <div class="container">
@@ -355,7 +359,7 @@
           <div class="col-lg-6">
             <div class="contact-form">
               <h2 class="text-dark">Get in touch</h2>
-              <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum et consequatur tempora, vero doloribus nemo iure quam nostrum quaerat debitis, quidem asperiores fugit labore, necessitatibus nulla illo. Quia, hic excepturi!</p>
+              <p class="lead">I'm always open to new opportunities, collaborations or challenging projects. Feel free to get in touch to discuss ideas!</p>
               <form id="contactForm">
                 <div class="row gy-4 gx-3">
                   <div class="col-12">
@@ -419,7 +423,7 @@
                 </div>
                 <div class="col ps-3">
                   <h5>Address</h5>
-                  <p>Augusto Faustino, 213 - Cajuru, Curitiba, PR</p>
+                  <p>Curitiba, PR - Brazil</p>
                 </div>
               </li>
             </ul>

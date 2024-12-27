@@ -12,7 +12,7 @@ $(window).on("scroll", function(){
 $(document).ready(function () {
   // Typing animation
   new Typed('#type-it', {
-    strings: ['Web Developer', 'Meachtronics', 'Freelancer'],
+    strings: ['Full-Stack Developer', 'Mechatronics', 'Freelancer'],
     typeSpeed: 100,
     loop: true
   });
@@ -41,7 +41,7 @@ $(document).ready(function () {
   });
 });
 
-// Data footer 
+// Data footer
 document.addEventListener("DOMContentLoaded", function() {
   var year = new Date().getFullYear();
   document.getElementById("year").textContent = year;
