@@ -41,7 +41,7 @@ $(document).ready(function () {
   });
 });
 
-// Data footer current
+// Data footer 
 document.addEventListener("DOMContentLoaded", function() {
   var year = new Date().getFullYear();
   document.getElementById("year").textContent = year;
