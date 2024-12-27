@@ -12,7 +12,7 @@ $(window).on("scroll", function(){
 $(document).ready(function () {
   // Typing animation
   new Typed('#type-it', {
-    strings: ['Full-Stack Developer', 'Mechatronics', 'Freelancer'],
+    strings: ['Full-Stack Developer Jr', 'Mechatronics', 'Freelancer'],
     typeSpeed: 100,
     loop: true
   });
